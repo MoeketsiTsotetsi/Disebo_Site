@@ -1,0 +1,10 @@
+.sidebar{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 5%;
+}
+
+#sidebar-links{
+    margin-bottom: 7rem;
+    margin-right: -5rem;
+}

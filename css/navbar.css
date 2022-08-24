@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+
+*{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+
+
+.nav-item{
+    margin-right: 9.7rem;
+    font-size: 1.1rem;
+}
+
+#menu-1{
+    margin-left: 4rem;
+}

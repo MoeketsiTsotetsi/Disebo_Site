@@ -37,6 +37,7 @@
 </head>
 <body>
 
+
 <div class="form text-center">
 
 <form action="registration.php" method="post">

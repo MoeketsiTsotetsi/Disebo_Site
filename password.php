@@ -1,6 +1,7 @@
 <?php  
 $result = "";
 session_start();
+include 'db.php';
 
 if(isset($_POST['btnSubmit'])){
     $password = $_POST['password'];
@@ -9,10 +10,23 @@ if(isset($_POST['btnSubmit'])){
         if(strcmp($password,$cpassword) == 0){
             $_SESSION['password'] = $password;
 
-            $ver_code = "code";
-            $_SESSION['vercode'] = $ver_code;
 
-           header("Location:verification.php");
+        $stmt = $conn->prepare("INSERT INTO userInfo (username, name, email,cellno,password) VALUES (?, ?, ?,?,?)");
+        $stmt->bind_param("sssis", $username ,$name, $email,$cellno,$password);
+        
+        // set parameters and execute
+        $username = $_SESSION['username'];
+        $name = $_SESSION['name'];
+        $email = $_SESSION['email'];
+        $cellno = $_SESSION['cellno'];
+        $password =$_SESSION['password'];
+        
+
+        $stmt->execute();
+
+        
+
+        header('Location:index.php');
         }else{
           $result = "Please enter the same password";
         }

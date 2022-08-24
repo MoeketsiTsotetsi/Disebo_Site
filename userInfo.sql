@@ -41,8 +41,8 @@ CREATE TABLE `userinfo` (
 -- Dumping data for table `userInfo`
 --
 
-INSERT INTO `userInfo` (`Username`, `Name`, `Email`, `Cellno`, `Password`, `Code`) VALUES
-('test', 'test', 'test@gmail.com', 643133843, 'test', 0),
+INSERT INTO `userInfo` (`Username`, `Name`, `Email`, `Cellno`, `Password`) VALUES
+('test', 'test', 'test@gmail.com', 643133843, 'test'),
 ('tmac', 'Moeketsi Tsotetsi', 'tmoeketsid@gmail.com', 633133843, 'test', 0);
 
 --

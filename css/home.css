@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+
+*{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+
+
+
+.text-center{
+    background: url('../images/pexels-pixabay-159711.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 7rem;
+   
+    margin-top: -45rem;
+    height: 80vh;
+    width: 90%;
+    font-size: larger;
+    color: white;
+    
+}
+
+
+.text-continer{
+    position: relative;
+    top: 12rem;
+    
+}
+
+footer{
+    margin-top: 10rem;
+}
+
+.home_subtext{
+    font-size: 1.2rem;
+}
